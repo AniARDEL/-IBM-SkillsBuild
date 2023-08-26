@@ -17,7 +17,6 @@ import OrderDetails from "./components/myOrders/OrderDetails";
 import About from "./components/about/About";
 
 import { GoogleOAuthProvider } from '@react-oauth/google';
-import Google from '../google';
 
 import "./styles/app.scss";
 import "./styles/header.scss";
