@@ -1,0 +1,92 @@
+@import "colors";
+
+.home {
+  height: 90vh;
+  overflow-x: hidden;
+
+  div {
+    padding-left: 8rem;
+    padding-top: 17rem;
+   
+    > h1 {
+      font-size: 7rem;
+      text-transform: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    > h2 {
+      font-size: 4rem;
+      color: white;
+      padding-bottom: 2rem;
+    }
+  }
+
+  > a {
+    display: block;
+    margin: 2rem 8rem;
+    width: 14rem;
+    background-color:#fb8500;
+    color: white;
+    text-align: center;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 1rem;
+    cursor: pointer;
+    &:hover {
+      background-color: #ca6702;
+      color: white;
+    }
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 90%;
+    background-image: url("../assets/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0%;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home {
+    > div {
+      text-align: center;
+      padding-top: 10rem;
+      padding-left: 2rem;
+      
+
+      }
+    }
+
+    > a {
+      margin: 2rem auto;
+    }
+  }
+
+@media screen and (max-width: 800px) {
+  .home {
+      height: 50vh;
+    > div {
+        padding-top: 3rem;
+        padding-left: 3rem;
+      > h1 {
+        font-size: 4rem;
+        text-align: left;
+      }
+      > h2 {
+        font-size: 2rem;
+        text-align: left;
+      }
+  }
+     > a {
+      margin-left: 3rem;
+     }
+}
+}

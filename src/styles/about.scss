@@ -1,0 +1,117 @@
+@import "colors";
+
+.about {
+  width: 100%;
+  background-color: $pink;
+
+  > main {
+    background-color: white;
+    max-width: 900px;
+    height: 100%;
+    margin: auto;
+
+    > h1 {
+      font: 500 4rem "Poppins";
+      color: $red;
+      padding: 1rem 2rem;
+      text-transform: none;
+      background-color: $dark;
+      text-align: center;
+      font-weight: 800;
+    }
+
+    > article {
+      margin: 2rem 0;
+      > h4 {
+        font: 600 2rem "Poppins";
+        text-transform: none;
+        text-align: center;
+        padding: 2rem 0 0;
+        color: $dark;
+      }
+
+      > p {
+        letter-spacing: 3px;
+        word-spacing: 3px;
+        padding: 2rem;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        color: $dark;
+      }
+
+      > a {
+        background-color: $dark;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        color: white;
+        font-size: 1.5rem;
+        transition: all 0.3s;
+        margin: auto;
+        &:hover {
+          color: $red;
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    > div {
+      background-color: $dark;
+      padding: 2rem;
+      color: white;
+      > h2 {
+        text-align: center;
+        text-transform: none;
+      }
+
+      > article {
+        display: flex;
+        padding: 3rem 0;
+        justify-content: center;
+        align-items: center;
+
+        > div {
+          margin: 0rem 4rem;
+          > img {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+          }
+         
+        }
+        > p {
+          margin: 0 1rem;
+          width: 50%;
+          line-height: 150%;
+          font-weight: 100;
+          
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about > main {
+    > h1 {
+      font: 100 3rem "Poppins";
+      text-align: center;
+    }
+
+    > article > p {
+      width: 100%;
+    }
+
+    > div > article {
+      flex-direction: column;
+
+      > p {
+        text-align: center;
+      }
+    }
+  }
+}

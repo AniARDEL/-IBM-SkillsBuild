@@ -1,0 +1,21 @@
+@import "colors";
+.info-button {
+    background-color: $red;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        border: none;
+        text-align: center;
+    
+        float: right;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: $reddark;
+        }
+    
+  }
+
+  td {
+    padding: 2rem 1rem;
+  }
